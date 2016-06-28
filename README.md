@@ -5,7 +5,7 @@ Some RabbitMQ tidbits for quick referencing.
 
 ## setup
 
-MRI Ruby using bunny
+MRI Ruby using [bunny](http://rubybunny.info/articles/guides.html)
 
 ```ruby
 require 'bunny'
@@ -19,7 +19,7 @@ some_queue.subscribe(:block => true, :manual_ack => true) do |delivery_info, pro
 end
 ```
 
-JRuby using march_hare
+JRuby using (march_hare)[http://rubymarchhare.info/articles/guides.html]
 
 ```ruby
 require 'march_hare'
@@ -32,7 +32,7 @@ some_queue.subscribe(:manual_ack => true) do |metadata, payload|
 end
 ```
 
-Node.js using amqplib callback api
+Node.js using (amqplib)[http://www.squaremobius.net/amqp.node/channel_api.html] callback api
 
 ```javascript
 const amqp = require('amqplib/callback_api');
